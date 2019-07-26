@@ -29,7 +29,7 @@ public class ExtDispatcherServlet extends HttpServlet {
 
     // SpringMVC 容器对象 key:类名id ,value 对象
     private ConcurrentHashMap<String, Object> springmvcBeans = new ConcurrentHashMap<String, Object>();
-    // SpringMVC 容器对象 keya:请求地址 ,value类
+    // SpringMVC 容器对象 key:请求地址 ,value类
     private ConcurrentHashMap<String, Object> urlBeans = new ConcurrentHashMap<String, Object>();
     // SpringMVC 容器对象 key:请求地址 ,value 方法名称
     private ConcurrentHashMap<String, String> urlMethods = new ConcurrentHashMap<String, String>();
