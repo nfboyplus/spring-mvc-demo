@@ -42,7 +42,7 @@ public class ClassUtil {
 		return returnClassList;
 	}
 
-	/*
+	/**
 	 * 取得某一类所在包的所有类名 不含迭代
 	 */
 	public static String[] getPackageAllClassName(String classLocation, String packageName) {
@@ -148,11 +148,6 @@ public class ClassUtil {
 
 	/**
 	 * 以文件的形式来获取包下的所有Class
-	 * 
-	 * @param packageName
-	 * @param packagePath
-	 * @param recursive
-	 * @param classes
 	 */
 	public static void findAndAddClassesInPackageByFile(String packageName, String packagePath, final boolean recursive,
 			List<Class<?>> classes) {
@@ -188,7 +183,9 @@ public class ClassUtil {
 		}
 	}
 
-	// 首字母转小写
+	/**
+	 * 首字母转小写
+	 */
 	public static String toLowerCaseFirstOne(String s) {
 		if (Character.isLowerCase(s.charAt(0)))
 			return s;
@@ -196,7 +193,9 @@ public class ClassUtil {
 			return (new StringBuilder()).append(Character.toLowerCase(s.charAt(0))).append(s.substring(1)).toString();
 	}
 
-	// 初始化对象
+	/**
+	 * 初始化对象
+	 */
 	public static Object newInstance(Class<?> classInfo)
 			throws ClassNotFoundException, InstantiationException, IllegalAccessException {
 		return classInfo.newInstance();
