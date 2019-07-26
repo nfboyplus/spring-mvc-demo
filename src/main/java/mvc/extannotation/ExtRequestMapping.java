@@ -6,8 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * 自定义RequestMapping 作者: 每特教育-余胜军<br>
- * 联系方式:QQ644064779|WWW.itmayiedu.com<br>
+ * 自定义 RequestMapping
  */
 @Target({ ElementType.METHOD, ElementType.TYPE })
 @Retention(RetentionPolicy.RUNTIME)
